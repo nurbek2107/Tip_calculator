@@ -1,0 +1,161 @@
+@font-face {
+    font-display: swap;
+    font-family: 'Space Mono';
+    font-style: normal;
+    font-weight: 700;
+    src: url('./font/space-mono-v13-latin-700.woff2') format('woff2');
+}
+
+body,
+html {
+    font-family: 'Space Mono';
+    height: 100%;
+    background-color: #C5E4E7;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 920px;
+    height: 481px;
+    background-color: #fff;
+    border-radius: 28px;
+
+    .left {
+        padding: 48px;
+
+        form {
+            label {
+                font-size: 16px;
+                color: #5E7A7D;
+                line-height: 23.7px;
+            }
+        }
+    }
+
+    .right {
+        padding: 48px;
+    }
+}
+
+.img_logo {
+    width: 86.66px;
+    height: 53.14px;
+    margin-bottom: 60px;
+}
+
+.input {
+    width: 345px;
+    text-align: right;
+    height: 48px;
+    background-color: #05060f0a;
+    border-radius: .5rem;
+    padding: 0 1rem;
+    border: 2px solid transparent;
+    caret-color: #26C2AE;
+    font-size: 24px;
+    line-height: 35.54px;
+    font-family: 'Space Mono';
+    transition: border-color .3s cubic-bezier(.25, .01, .25, 1) 0s, color .3s cubic-bezier(.25, .01, .25, 1) 0s, background .2s cubic-bezier(.25, .01, .25, 1) 0s;
+}
+
+.label {
+    display: block;
+    margin-bottom: .3rem;
+    font-size: .9rem;
+    font-weight: bold;
+    color: #05060f99;
+    font-family: 'Space Mono';
+    transition: color .3s cubic-bezier(.25, .01, .25, 1) 0s;
+}
+
+.input:hover,
+.input:focus,
+.input-group:hover .input {
+    outline: none;
+    border-color: #26C2AE;
+}
+
+.input-group:hover .label,
+.input:focus {
+    color: #05060fc2;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type=number] {
+    -moz-appearance: textfield;
+}
+.input-group{
+    position: relative;
+    margin-bottom: 40px;
+    margin-top: 6px;
+}
+ svg {
+    position: absolute;
+    left: 19px;
+    top: 16px;
+    z-index: 10;
+ }
+ .button{
+    margin-top: 16px;
+    button{
+            width: 117px;
+            height: 48px;
+            border:none;
+            cursor: pointer;
+            transition: all .5s ease;
+            font-family: 'Space Mono';
+            font-size: 24px;
+            border-radius:4px;
+            background-color: #00474B;
+            color:#fff;
+    }
+    button:hover{
+        background-color: #26C2AE;
+        color:#00474B;
+    }
+    .card1{
+        display: flex;
+        gap:    14px;
+    }
+    .card2 {
+        display: flex;
+        gap: 14px;
+        margin-top: 16px;
+    }
+}
+
+.input_value {
+    width: 83px;
+    text-align: right;
+    height: 45px;
+    background-color: #05060f0a;
+    border-radius: 4px;
+    padding: 0 1rem;
+    border: 2px solid transparent;
+    font-size: 22px;
+    caret-color: #26C2AE;
+    line-height: 35.54px;
+    font-family: 'Space Mono';
+    transition: border-color .3s cubic-bezier(.25, .01, .25, 1) 0s, color .3s cubic-bezier(.25, .01, .25, 1) 0s, background .2s cubic-bezier(.25, .01, .25, 1) 0s;
+}
+
+.input_value:hover,
+.input_value:focus,
+.input_value-group:hover .input_value {
+    outline: none;
+    border-color: #26C2AE;
+}
+
+.input_value-group:hover .label,
+.input_value:focus {
+    color: #05060fc2;
+}
