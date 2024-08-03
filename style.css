@@ -19,13 +19,10 @@ html {
 }
 
 .container {
-    width: 920px;
-    height: 481px;
     background-color: #fff;
     border-radius: 28px;
 
-    .left {
-        padding: 48px;
+    .left_parents {
 
         form {
             label {
@@ -36,10 +33,17 @@ html {
         }
     }
 
-    .right {
-        padding: 48px;
-    }
+    
 }
+
+.wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 48px;
+    padding: 48px;
+    justify-content: center;
+}
+
 
 .img_logo {
     width: 86.66px;
@@ -93,39 +97,47 @@ input::-webkit-inner-spin-button {
 input[type=number] {
     -moz-appearance: textfield;
 }
-.input-group{
+
+.input-group {
     position: relative;
     margin-bottom: 40px;
     margin-top: 6px;
 }
- svg {
+
+svg {
     position: absolute;
     left: 19px;
     top: 16px;
     z-index: 10;
- }
- .button{
+}
+
+.button {
+    margin-bottom: 40px;
     margin-top: 16px;
-    button{
-            width: 117px;
-            height: 48px;
-            border:none;
-            cursor: pointer;
-            transition: all .5s ease;
-            font-family: 'Space Mono';
-            font-size: 24px;
-            border-radius:4px;
-            background-color: #00474B;
-            color:#fff;
+
+    button {
+        width: 117px;
+        height: 48px;
+        border: none;
+        cursor: pointer;
+        transition: all .5s ease;
+        font-family: 'Space Mono';
+        font-size: 24px;
+        border-radius: 4px;
+        background-color: #00474B;
+        color: #fff;
     }
-    button:hover{
+
+    button:hover {
         background-color: #26C2AE;
-        color:#00474B;
+        color: #00474B;
     }
-    .card1{
+
+    .card1 {
         display: flex;
-        gap:    14px;
+        gap: 14px;
     }
+
     .card2 {
         display: flex;
         gap: 14px;
@@ -158,4 +170,59 @@ input[type=number] {
 .input_value-group:hover .label,
 .input_value:focus {
     color: #05060fc2;
+}
+.right_parents {
+    background: #00474B;
+    height: 317px;
+    width: 413px;
+    border-radius:12px;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    .card{
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+    }
+    .block{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        font-family: 'Space Mono';
+        
+        div{
+            line-height: 10.25px ;
+        }
+        span{
+            font-size: 48px;
+            color: #26C2AE;
+        }
+        p{
+            font-size: 13px;
+            color: #7F9D9F;
+        }   
+        h2{
+            font-size: 16px;
+            color: #fff;
+        }
+    }
+    .bottom{
+        button{
+        width: 100%;
+        background: #26C2AE;
+        border:none;
+        padding: 15px 40px ;
+        border-radius:10px;
+        cursor: pointer;
+        transition: all .5s ease;
+        font-family: 'Space Mono';
+        font-size: 20px;
+        color: #00474B;
+        }
+        button:hover{
+            background-color: #9FE8DF;
+            color: #00474B;
+        }
+    }
 }
