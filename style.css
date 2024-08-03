@@ -21,8 +21,9 @@ html {
 .container {
     background-color: #fff;
     border-radius: 28px;
-
+    padding: 40px 40px 10px 40px;
     .left_parents {
+    padding: 40px;
 
         form {
             label {
@@ -40,7 +41,7 @@ html {
     display: flex;
     flex-wrap: wrap;
     gap: 48px;
-    padding: 48px;
+    /* padding: 48px; */
     justify-content: center;
 }
 
@@ -100,7 +101,6 @@ input[type=number] {
 
 .input-group {
     position: relative;
-    margin-bottom: 40px;
     margin-top: 6px;
 }
 
